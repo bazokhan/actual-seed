@@ -2,5 +2,12 @@
   "name": "actual-mine",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dump": "sqlite3 \"./db/sqlite.db\" \".output ./db/sqlite.sql\" \".dump\" \".exit\"",
+    "schema": "sqlite3 \"./db/sqlite.db\" \".output ./db/schema.sql\" \".schema\" \".exit\""
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
 }

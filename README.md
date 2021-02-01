@@ -7,7 +7,7 @@ sqlite> .exit
 
 # Export schema from sqlite
 
-sqlite> .schemas
+sqlite> .schema
 copy to .sql file
 
 # Import schema in postgres
