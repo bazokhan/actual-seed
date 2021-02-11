@@ -91,7 +91,10 @@ const extractInsert = async () => {
       }
     });
     fileContent = fileContent.join("\r");
-    await writeFile(argv.output || "./db/output.sql", fileContent);
+    await writeFile(
+      argv.output || `./db/output-${Date.now()}.sql`,
+      fileContent
+    );
   } catch (err) {
     console.error(err);
   }

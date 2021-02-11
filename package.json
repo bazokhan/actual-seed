@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dump": "sqlite3 \"./db/sqlite.db\" \".output ./db/sqlite.sql\" \".dump\" \".exit\"",
-    "schema": "sqlite3 \"./db/sqlite.db\" \".output ./db/schema.sql\" \".schema\" \".exit\""
+    "schema": "sqlite3 \"./db/sqlite.db\" \".output ./db/schema.sql\" \".schema\" \".exit\"",
+    "seed": "node index.js"
   },
   "dependencies": {
     "yargs": "^16.2.0"
